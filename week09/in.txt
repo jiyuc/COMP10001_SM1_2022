@@ -1,0 +1,6 @@
+To study the representational power of a GNN, we analyze when a GNN maps two nodes to the same location in the embedding space.
+Intuitively, a maximally powerful GNN maps two nodes to the same location only if they have identical subtree structures with identical features on the corresponding nodes.
+Since subtree structures are defined recursively via node neighborhoods (Figure 1), we can reduce our analysis to the question whether a GNN maps two neighborhoods (i.e., two multisets) to the same embedding or representation.
+A maximally powerful GNN would never map two different neighborhoods, i.e., multisets of feature vectors, to the same representation.
+This means its aggregation scheme must be injective.
+Thus, we abstract a GNN’s aggregation scheme as a class of functions over multisets that their neural networks can represent, and analyze whether they are able to represent injective multiset functions.
